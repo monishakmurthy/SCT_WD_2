@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>⏱️ Stopwatch App</title>
+  <link rel="stylesheet" href="stopwatch.css" />
+</head>
+<body>
+
+  <!-- ✨ Animated Floating Background -->
+  <div class="animated-bg">
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+    <div class="bubble bubble3"></div>
+    <div class="bubble bubble4"></div>
+    <div class="bubble bubble5"></div>
+  </div>
+
+  <!-- ⏱️ Stopwatch UI -->
+  <div class="stopwatch-container">
+    <div class="toggle-container">
+      <label class="toggle-switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <h1>Stopwatch</h1>
+    <div id="time-display">00:00:00.00</div>
+
+    <div class="buttons">
+      <button id="start-btn">Start</button>
+      <button id="pause-btn" disabled>Pause</button>
+      <button id="reset-btn">Reset</button>
+      <button id="lap-btn" disabled>Lap</button>
+    </div>
+
+    <div class="laps">
+      <h2>Laps</h2>
+      <ul id="lap-list"></ul>
+    </div>
+  </div>
+
+  <script src="stopwatch.js"></script>
+</body>
+</html>
